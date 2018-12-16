@@ -22,10 +22,10 @@ if __name__ == '__main__':
 		print(" 1 . Encrypt \n 2 . Decrypt\n 3.Exit")
 		choice = int( input( "Enter choice:" ))
 		if choice == 1 :
-			cipher_text = ceaser_ecnrypt( raw_input( " Enter plain Text " ) , int( intput( "Enter key:" )) , 1 != abs( int( input( "Enter 1 to encrypt along with spaces" ))))
+			cipher_text = ceaser_encrypt( raw_input( " Enter plain Text " ) , int( intput( "Enter key:" )) , 1 != abs( int( input( "Enter 1 to encrypt along with spaces" ))))
 			print( cipher_text )
 		elif choice == 2 :					     
-			cipher_text = ceaser_ecnrypt( raw_input( " Enter plain Text " ) , int( intput( "Enter key:" )) , 1 != abs( int( input( "Enter 1 to encrypt along with spaces " ))))
+			cipher_text = ceaser_decrypt( raw_input( " Enter plain Text " ) , int( intput( "Enter key:" )) , 1 != abs( int( input( "Enter 1 to encrypt along with spaces " ))))
 			print( cipher_text )
 		elif choice == 3 :
 			exit(0)
