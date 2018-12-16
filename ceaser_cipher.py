@@ -17,18 +17,16 @@ def ceaser_decrypt( cipher_text , key = 3 , wspace = True , character_set = 127 
 	return "".join(plain_text)
 
 if __name__ == '__main__':
-	choice = 0
+	choice =0
 	while(choice == 0):
 		print(" 1 . Encrypt \n 2 . Decrypt\n 3.Exit")
 		choice = int( input( "Enter choice:" ))
 		if choice == 1 :
-			cipher_text = ceaser_encrypt( raw_input( " Enter plain Text " ) , int( intput( "Enter key:" )) , 1 != abs( int( input( "Enter 1 to encrypt along with spaces" ))))
-			print( cipher_text )
+			print( ceaser_encrypt( input( " Enter plain Text " ) , int( input( "Enter key:" )) , 1 != abs( int( input( "Enter 1 to encrypt along with spaces" )))))
 		elif choice == 2 :					     
-			cipher_text = ceaser_decrypt( raw_input( " Enter plain Text " ) , int( intput( "Enter key:" )) , 1 != abs( int( input( "Enter 1 to encrypt along with spaces " ))))
-			print( cipher_text )
+			print(ceaser_decrypt( input( " Enter cipher Text " ) , int( input( "Enter key:" )) , 1 != abs( int( input( "Enter 1 to decrypt along with spaces " )))))
 		elif choice == 3 :
 			exit(0)
 		else :
 			print(" Enter valid input ")
-			choice = 0						     
+		choice = 0	
