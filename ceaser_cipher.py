@@ -23,17 +23,18 @@ def get_vocab():
 	for word in nltk.corpus.words.words():
 		yield word.lower()
 
+
 def ceaser_brute_decrypt( cipher_text ):
 	""" decrypts ceaser cipher even if there is no key """
 	vocab = set(get_vocab())
 	plain_text = []
-	for y in cipher_text.split():
+	cip_text = cipher_text.split()
+	for y in sorted( cip_text , key =len ,reverse =True ):
 		for key in range(128):
 			x = ceaser_decrypt(y,key)
 			if x in vocab:
 				plain_text = ceaser_decrypt(cipher_text,key)
 				return plain_text
-
 
 if __name__ == '__main__':
 	choice = 0
