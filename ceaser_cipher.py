@@ -17,6 +17,7 @@ def ceaser_decrypt( cipher_text , key = 3 , wspace = True , character_set = 127 
 	return "".join(plain_text)
 
 if __name__ == '__main__':
+	choice = 0
 	while(choice == 0):
 		print(" 1 . Encrypt \n 2 . Decrypt\n 3.Exit")
 		choice = int( input( "Enter choice:" ))
